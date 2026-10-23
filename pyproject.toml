@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clear-my-game"
+version = "0.0.1"
+description = "Audit game folders and safely quarantine non-essential files to save disk space"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Johann Schiffer"}
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0"
+]
+
+[project.scripts]
+clear-my-game = "clear_my_game.cli:main"

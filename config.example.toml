@@ -1,0 +1,16 @@
+# Configuration for clear-my-game
+
+# Media extensions considered safe for quarantine
+extensions_media = [".mp4", ".bk2", ".bik", ".webm", ".usm", ".wem", ".bnk"]
+
+# Files that must never be touched
+extensions_ignore = [".exe", ".dll", ".so", ".pak", ".assets", ".bundle", ".dat", ".bin"]
+
+# Minimum file size in MB to consider
+min_size_mb = 50
+
+# Folders to skip completely
+exclude_dirs = [".git", "EasyAntiCheat", "BattlEye"]
+
+# Allow moving container archives (reported only, never applied)
+allow_container_move = false
